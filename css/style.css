@@ -701,6 +701,8 @@ input:checked{
         margin-top: 33px;
         cursor: pointer;
         margin-left: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     .left-container {
@@ -866,6 +868,11 @@ input:checked{
         border-radius: 0px 0px 0px 0px;
         float: right;
         position: relative;
+    }
+    .right-settings span {
+        
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     .main-sneakers-cont img {
