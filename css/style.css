@@ -669,6 +669,8 @@ input:checked{
         width: 20px;
         height: 20px;
         margin-top: 30px;
+        margin-left: 3px;
+        margin-right: 3px;
         
     }
 
