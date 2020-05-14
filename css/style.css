@@ -583,6 +583,8 @@ input:checked{
     text-align: center;
     padding-top: 5px;
     margin-top: 33px;
+    margin-left: 3px;
+    margin-right: 3px;
     cursor: pointer;
    
 }
