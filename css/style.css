@@ -453,6 +453,9 @@ body {
     margin-top: 30px;
     cursor: pointer;
     opacity: .3;
+    margin-left: 3px;
+    margin-right: 3px;
+  
     
     
     
@@ -666,7 +669,7 @@ input:checked{
         width: 20px;
         height: 20px;
         margin-top: 30px;
-        margin-left: 3px;
+        
     }
 
     .right-settings {
