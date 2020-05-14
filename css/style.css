@@ -1,0 +1,1054 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    height: 800px;
+    background-image: linear-gradient(to right, red , orange );
+}
+
+.main-container {
+    width: 85%;
+    height: 80%;
+    margin: 160px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px;
+    
+    
+}
+
+.left-container {
+
+    width: 50%;
+    height: 100%;
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+.left-container::before{
+
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -5;
+    background-image: url(../images/background4.png);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border-radius: 20px 0px 0px 20px;
+}
+
+.left-container .logo {
+
+    width: 36%;
+    height: 17%;
+    margin-top: 3px;
+    margin-left: -10px;
+    margin-bottom: 80px;
+    
+    background-image: url(../images/logo.png);
+    
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.left-container h1 {
+
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.left-container .article {
+
+    margin-left: 50px;
+    margin-bottom: 40px;
+    max-width: 45%;
+}
+
+.left-container .btn {
+
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    margin-left: 41px;
+    margin-bottom: 20px;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.left-container .btn:hover {
+
+    height: 50px;
+    width: 100px;
+    background-color: rgb(31, 30, 30);
+    margin-left: 41px;
+    margin-bottom: 20px;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+    color: orange;
+   
+}
+
+.sneakers-container {
+
+    width: 100%;
+    height: 28%;
+    
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sneakers-container .left-foto , .middle-foto , .right-foto {
+
+    background-color: yellowgreen;
+    width: 19%;
+    height: 75%;
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(24, 21, 21);
+    
+    
+}
+
+.sneakers-container img {
+
+    width: 76%;
+    height: 75%;
+    transform: rotateZ(-50deg);
+    position: absolute;
+    top: -45px;
+    left: 25px;
+    margin-bottom: 50px;
+    
+}
+
+.sneakers-container .middle-foto img {
+
+    height: 50%;
+    width: 70%;
+    top: -25px;
+    left: 40px;
+}
+
+.sneakers-container .right-foto img {
+
+    height: 90%;
+    top: -60px;
+    left: 15px;
+}
+
+.rating {
+
+    margin-top: 50px;
+    margin-bottom: 2px;
+}
+
+
+
+.checked {
+
+    color: orange;
+    
+}
+
+.sneakers-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 40%;
+    background-color: #2b2727;
+    text-align: center;
+    
+}
+
+.price {
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+.plusbtn {
+    margin-top: 2px;
+    background-color: #2b2727;
+}
+
+
+
+
+/* styling the top right nav */
+
+.right-container {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
+    border-radius: 0px 20px 20px 0px;
+    float: right;
+    
+}
+
+
+
+.nav    {
+    width: 100%;
+    height: 15%;
+
+    direction: rtl;
+    
+}
+
+.nav ul {
+
+    width: 100%;
+    height: 80%;
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+      
+}
+
+#icon {
+    width: 50px;
+    text-align: center;
+}
+
+.nav ul li a{
+    
+    position: relative;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    
+    
+   
+    
+    }
+
+
+.nav ul li a::before {
+    content: "";
+    background-image: linear-gradient(to right, red , orange );
+    
+    width: 100%;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 4px;
+    transform: scaleX(0);
+    transition: all .5s ease-in-out;
+    transform-origin: right;
+  
+}
+
+.nav ul li a:hover::before{
+
+    content: "";
+    background-image: linear-gradient(to right, red , orange );
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    transform: scaleX(1); 
+    transform-origin: right;
+  
+} 
+
+
+.nav ul li a::after{
+
+    content: "";
+    background-image: linear-gradient(to right, red , orange );
+    width: 100%;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 4px;
+    transform: scaleX(0);
+    transition: all .5s ease-in-out;
+    transform-origin: left;
+    
+}
+
+
+ .nav ul li a:hover::after{
+
+    content: "";
+    background-image: linear-gradient(to right, red , orange );
+    
+    width: 100%;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 4px;
+    transform: scaleX(1); 
+    
+
+} 
+.nav ul li a:hover {
+
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-big-container {
+
+    width: 100%;
+    height: 55%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.main-sneakers-cont {
+
+    width: 25%;
+    height: 63%;
+    border-radius: 50%;
+    background-color: rgb(228, 218, 218);
+    position: relative;
+}
+
+.main-sneakers-cont img {
+
+    width: 170%;
+    height: 150%;
+    transform: rotateZ(-20deg);
+    position: absolute;
+    top: -77px;
+    left: -84px;
+}
+
+.right-big-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(230, 218, 218);
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 28%;
+    background-color: #2b2727;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.main-price {
+
+    width: 150px;
+    height: 50px;
+    
+    position: absolute;
+    top: 270px;
+    margin-top: 30px auto;
+    text-align: center;
+}
+
+
+.main-price p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-top: 15px;
+}
+
+.reviews {
+    color: white;
+    font-weight: bold;
+}
+
+.settings {
+
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-settings {
+
+    width: 30%;
+    height: 55%;
+    background-color: #181515;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+   padding-left: 30px;
+   padding-right: 30px;
+   border-radius: 20px;
+   position: relative;
+}
+
+
+.left-settings input {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    opacity: .3;
+    
+    
+    
+}
+.green:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    
+    position: relative;
+    background-color: #09e409;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  
+}
+
+.red:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  
+}
+
+.blue:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+  
+    
+    position: relative;
+    background-color: blue;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  
+}
+
+.yellow:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    
+    position: relative;
+    background-color: yellow;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  
+}
+
+input:checked:after {
+    width: 23px;
+    height: 23px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+    
+}
+
+input:checked{
+    width: 23px;
+    height: 23px;
+    border-radius: 15px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    opacity: 1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+    
+}
+
+.colors {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bold;
+
+}
+
+
+
+
+.right-settings {
+
+    width: 40%;
+    height: 55%;
+    background-color: #181515;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.right-settings span {
+
+    color: white;
+    width: 35px;
+    height: 25px;
+    background-color: #2b2727;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 33px;
+    cursor: pointer;
+   
+}
+
+.right-settings h4 {
+
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 2px;
+}
+
+
+
+
+
+/* here starts the media-quieries for iPhone 4 and 4S  320px - 480px */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    body {
+        height: 1000px;
+        background: none;
+    }
+
+    .main-container {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        margin: 0px;
+        border-radius: 0px;
+        padding: 0px;
+       
+    }
+
+    .right-container {
+        width: 100%;
+        height: 65%;
+        background-color: rgb(35, 35, 35);
+        border-radius: 0px 0px;
+        position: relative;
+    }
+
+
+    .nav {
+        width: 100%;
+        height: 15%;
+        float: right;
+        direction: rtl;
+    }
+
+    .nav i {
+        font-size: 30px;
+        margin: 20px 38px;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .right-big-container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-bottom: 25px;
+    }
+    
+    .main-sneakers-cont {
+        width: 50%;
+        height: 63%;
+        border-radius: 50%;
+        background-color: rgb(228, 218, 218);
+        position: relative;
+    }
+
+    .left-settings input {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 3px;
+    }
+
+    .right-settings {
+        width: 52%;
+        height: 55%;
+        background-color: #181515;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+
+    .right-settings span {
+        color: white;
+        width: 35px;
+        height: 25px;
+        background-color: #2b2727;
+        text-align: center;
+        padding-top: 5px;
+        margin-top: 33px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        border-radius: 0px 0px ;
+       
+    }
+
+    .left-container .logo {
+        
+            width: 100%;
+            height: 20%;
+            margin: 0px;
+            background-image: url(../images/logo.png);
+            background-position: center;
+            background-size: cover;
+        
+}
+
+    .left-container h1 {
+
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: 0px;
+        
+    }
+
+    .left-container .article {
+        margin: 20px auto;
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+
+    .left-container .btn {
+        height: 50px;
+        width: 50%;
+        margin: 0px auto;
+        background-color: black;
+       text-align: center;
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .sneakers-container {
+        width: 100%;
+        height: 50%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-container::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        z-index: -5;
+        background-image: url(../images/background4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+         border-radius: 0px 0px 0px 20px;
+    }
+
+    .sneakers-container a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        width: 27px;
+        height: 20px;
+        border-radius: 40%;
+        background-color: #2b2727;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .sneakers-container .left-foto, .middle-foto, .right-foto {
+        background-color: yellowgreen;
+        width: 54%;
+        height: 77%;
+        margin-top: 28px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color: rgb(24, 21, 21);
+    }
+
+    .sneakers-container img {
+        width: 61%;
+        height: 84%;
+        transform: rotateZ(0deg);
+        position: absolute;
+        top: -45px;
+        left: 32px;
+        margin-bottom: 50px;
+    }
+
+    .sneakers-container .middle-foto img {
+        height: 54%;
+        width: 55%;
+        top: -11px;
+        left: 40px;
+    }
+
+    .sneakers-container .right-foto img {
+        height: 94%;
+        width: 70%;
+        top: -60px;
+        left: 24px;
+    }
+
+
+}
+
+
+/* here starts the media-quieries 481px -767px */
+
+@media only screen and (min-width: 481px) and (max-width: 767px)  {
+
+
+
+    body {
+        height: 1000px;
+        background: none;
+        
+    }
+
+
+    .main-container {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background-color: white;
+        border-radius: 0px 0px;
+        padding: 6px;
+    }
+
+    .right-container {
+        width: 100%;
+        height: 56%;
+        background-color: rgb(35, 35, 35);
+        border-radius: 0px 0px 0px 0px;
+        float: right;
+        position: relative;
+    }
+
+    .main-sneakers-cont img {
+        width: 153%;
+        height: 150%;
+        transform: rotateZ(0deg);
+        position: absolute;
+        top: -77px;
+        left: -33px;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .left-container::before {
+       
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .sneakers-container {
+        width: 100%;
+        height: 30%;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sneakers-container .left-foto, .middle-foto, .right-foto {
+        background-color: yellowgreen;
+        width: 29%;
+        height: 75%;
+        margin-top: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color: rgb(24, 21, 21);
+    }
+
+    .sneakers-container img {
+        width: 78%;
+        height: 75%;
+        transform: rotateZ(0deg);
+        position: absolute;
+        top: -39px;
+        left: 18px;
+        margin-bottom: 50px;
+    }
+
+    .sneakers-container .middle-foto img {
+        height: 44%;
+        width: 70%;
+        top: 12px;
+        left: 23px;
+    }
+
+
+}
+
+
+/* here starts the media-quieries 768px - 1280px */
+
+@media only  screen and (min-width: 768px) and (max-width: 1280px) {
+
+    body {
+        height: 1000px;
+         
+    }
+
+    .main-container {
+        width: 100%;
+        height: 80%;
+        margin: 110px auto;
+        background-color: white;
+        border-radius: 0px 0px ; 
+        padding: 6px;
+    }
+
+    .right-big-container {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-bottom: 25px;
+    }
+
+    .main-sneakers-cont {
+        width: 33%;
+        height: 68%;
+        border-radius: 50%;
+        background-color: rgb(228, 218, 218);
+        position: relative;
+    }
+
+    .main-sneakers-cont img {
+        width: 170%;
+        height: 150%;
+        transform: rotateZ(-20deg);
+        position: absolute;
+        top: -77px;
+        left: -65px;
+    }
+
+    .settings {
+        margin-top: 100px;
+    }
+
+    .left-container .logo {
+        width: 36%;
+        height: 17%;
+        margin-top: 3px;
+        margin-left: 31px;
+        margin-bottom: 0px;
+        background-image: url(../images/logo.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sneakers-container .left-foto, .middle-foto, .right-foto {
+        background-color: yellowgreen;
+        width: 27%;
+        height: 58%;
+        margin-top: 60px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background-color: rgb(24, 21, 21);
+    }
+
+    .sneakers-container img {
+        width: 76%;
+        height: 75%;
+        transform: rotateZ(0deg);
+        position: absolute;
+        top: -38px;
+        left: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .sneakers-container .middle-foto img {
+        height: 50%;
+        width: 70%;
+        top: -14px;
+        left: 20px;
+    }
+
+    .sneakers-container .right-foto img {
+        height: 90%;
+        width: 88%;
+        top: -54px;
+        left: 15px;
+    }
+
+    .sneakers-container {
+
+        margin-top: 60px;
+    }
+
+}
+
+
+/* here starts the media-quieries 1281px - 1620px */
+
+@media only screen and (min-width: 1281px) and (max-width:1620px) {
+
+
+    .sneakers-container {
+        
+        margin-top: 9px;
+        
+    }
+}
+
+
